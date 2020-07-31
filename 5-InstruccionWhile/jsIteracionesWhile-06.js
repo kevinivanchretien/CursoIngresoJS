@@ -1,13 +1,16 @@
-function mostrar()
-{
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+function mostrar() {
+	let Numero;
+	let Suma =0;
+	let Contador=0;
 
-	contador=0;
-	acumulador=0;
-	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
+
+	do {
+		Numero = parseInt(prompt("ingrese un numero"));
+		Suma= Suma + Numero;
+		Contador=Contador +1;
+	}
+	while (Contador != 5)
+
+	document.getElementById("txtIdSuma").value = Suma;
+	document.getElementById("txtIdPromedio").value = Suma / 5;
 }//FIN DE LA FUNCIÓN
