@@ -8,7 +8,7 @@ function mostrar() {
 	{
 		
 		k=k+1; // k++; (es lo mismo) 
-		alert(+k);
+		alert(+k);//1.2.3
 	}
 	
 	

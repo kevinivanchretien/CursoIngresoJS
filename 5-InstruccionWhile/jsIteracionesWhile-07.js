@@ -13,11 +13,11 @@ function mostrar() {
 	{
 		Numero=parseInt(prompt("Ingrese un Nro"));
 		Suma= Suma + Numero;
-		Pregunta=prompt("desea continuar");
+		Respuesta=prompt("desea continuar? si/no").toLowerCase();
 		Contador= Contador +1;
 		
 		
-	}while(Pregunta == Respuesta)
+	}while(Respuesta=="si")
 
 
 	document.getElementById("txtIdSuma").value = Suma;
